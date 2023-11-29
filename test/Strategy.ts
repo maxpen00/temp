@@ -33,6 +33,7 @@ describe("Strategy", function () {
 
   describe("Initialize", async function () {
     it("setLeverageRatio", async function () {
+      console.log("swap ETH amount :", ETH_SWAP_AMOUNT);
       await this.strategyContract.loan(ETH_SWAP_AMOUNT);
     });
   });
