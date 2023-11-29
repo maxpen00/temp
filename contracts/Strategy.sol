@@ -101,7 +101,7 @@ contract Strategy {
     function loan(
         uint256 wstETHAmount
     ) public returns (uint256 repaidETHAmount) {
-        console.log("WstETHAmount : ", wstETHAmount);
+        console.log("WstETH loan amount : ", wstETHAmount);
         IAavePool(aavePool).flashLoanSimple(
             address(this),
             WstETH,
